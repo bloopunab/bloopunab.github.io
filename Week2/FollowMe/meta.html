@@ -1,0 +1,38 @@
+<!-- declaration -- tells browser what document type to expect -->
+<!DOCTYPE html>
+
+<!-- The lang attribute specifies the language of the element's content. 
+     'en' is English
+-->
+<html lang="en"> 
+
+
+<head>
+    <!--
+        character set utf-8 is character encoding capable of encoding all characters on the web
+        Because it is the default all modern browsers
+        utf-8 is used for something like 93% of all web traffic
+    -->
+    <meta charset="UTF-8">
+
+    <!-- tells the browser (IE) to use IE-edge version, instead of V11 and prior -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--
+        Without a viewport meta tag, mobile devices render pages at typical desktop screen widths 
+        and then scale the pages down, making them difficult to read. 
+        Setting the viewport meta tag lets you control the width and scaling of the viewport 
+        so that it's sized correctly on all devices.
+        
+        We will talk about this more in Week 3 (CSS - Bootstrap) onwards
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Content
+    </p>
+</body>
+</html>
