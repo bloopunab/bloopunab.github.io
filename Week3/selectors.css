@@ -1,0 +1,22 @@
+p.center{
+    text-align: center;
+}
+
+/*descent selector*/
+
+/*
+all instances of <p> class center as long as
+they have an ancestor <div> 
+*/
+
+div p.center{
+    text-align: center;
+}
+
+/*
+all instances of <p> class center as long as
+they have a parent  <div> 
+*/
+div > p{
+    text-align: center;
+}

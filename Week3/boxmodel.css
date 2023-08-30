@@ -1,0 +1,14 @@
+#box1{
+    border: 2px blue solid;
+    background-color:yellow
+}
+
+#box2{
+    border: 2px red;
+    background-color: aqua;
+}
+
+#box3{
+    border: 2px green;
+    background-color:pink
+}
