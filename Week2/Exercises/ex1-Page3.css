@@ -1,0 +1,31 @@
+
+
+.active {
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+ul {
+    color: black;
+}
+
+p{
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px
+    
+}
+
+h3 {
+    color: purple;
+    font-style: italic;
+}
+
+div {
+    border-radius: 5px;
+    background-color: rgb(212, 239, 248);
+    padding: 20px;
+}

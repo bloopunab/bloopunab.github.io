@@ -9,21 +9,69 @@
     <link rel="stylesheet" href="test.css"/>
 <!--internal css-->
     <style>
-        p{
-            color: red;
+        *{
+            margin:0;
+            padding:0;
         }
+        #box1{
+            width: 500px;
+            height: 300px;
+            border: 3px black solid;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin:auto
+            
+            
+        }
+        #box2{
+            background-color:yellow;
+        }
+
+        #ari{
+            color:blue;
+        }
+        .gato{
+            color:green;
+        }
+        
         /*id selector*/
         #para2{
             background-color:yellow;
+        }
+        /* class selector*/
+        .family{
+            color:purple;
+        }
+        .friends{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .enemies{
+            font-family: 'Times New Roman', Times, serif;
         }
        
     </style>
 </head>
 <body>
-    <p id="para1"></p>
-    <p id="para2"></p>
-    <p id="para3"></p>
-    <p id="para4"></p>
+    <div id="box1"> box 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptatum provident maiores ipsam, nemo quae qui, pariatur voluptas quisquam vitae eos, at atque magnam corrupti! Id quos ipsam laborum necessitatibus.</div>
+    <div id="box2"> box 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptatum provident maiores ipsam, nemo quae qui, pariatur voluptas quisquam vitae eos, at atque magnam corrupti! Id quos ipsam laborum necessitatibus.</div>
+
+    <p id="para1"> para 1 </p>
+    <p id="para2"> para 2</p>
+    <p id="para3">para 3 </p>
+    <p id="para4">para 4 </p>
+<p id="ari" class="'gato">oppa</p>
+    <h1 class="family"> 
+        heading 1
+    </h1>
    
+    <h2 class="family">
+        heading 2
+    </h2>
+    <span class ="family"> I am nice</span>
+    <p class="enemies friends">this is a prargraph</p>
 </body>
 </html>
