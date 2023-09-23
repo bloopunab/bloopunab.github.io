@@ -1,11 +1,14 @@
 #box1{
     border: 2px blue solid;
-    background-color:yellow
+    background-color:yellow;
+    margin-bottom: 130px
 }
 
 #box2{
     border: 2px red;
     background-color: aqua;
+    margin-top: 100px
+
 }
 
 #box3{

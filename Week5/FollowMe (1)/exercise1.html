@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript (Part 2) - Exercise 1</title>
+    <style>
+        #party-box {
+            border: 2px solid blue;
+            padding: 20px;
+            display: flex;
+        }
+
+        #photo-box, #button-box {
+            width: 100%;
+            text-align: center;
+            margin: auto 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="party-box">
+        
+        <div id="photo-box">
+            <h1 id="message">
+                Girl
+            </h1>
+            <img id="photo" src="images/chloe.jpg">
+        </div>
+
+        <div id="button-box">
+
+            <button id="button1" onclick="show_next_photo()">
+                Show Next Photo
+            </button>
+
+        </div>
+    </div>
+
+    <script>
+
+        //activating and deactivating the buttons
+
+        //=====================================================
+        // Pair Programming - Activity 1
+        //    exercise1.html
+        //=====================================================
+
+        /*
+            INPUT
+                min     lower-bound number (Integer >= 0)
+                max     upper-bound number (Integer >= 0)
+
+            OUTPUT
+                min <=  new Integer  <  max
+
+            EXAMPLE
+                Given min (0) and max (5), this function will return an Integer value
+                such as 0, 1, 2, 3, 4
+        */
+        // DO NOT MODIFY THIS HELPER FUNCTION
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        
+
+        // DO NOT MODIFY THESE ARRAYS
+        let girl_array = [ 'images/chloe.jpg', 'images/emily.jpg', 'images/emma.jpg' ]
+        let boy_array = [ 'images/dwayne.jpg', 'images/hugh.jpg', 'images/kevin.jpg' ]
+        
+        
+        
+
+        function show_next_photo(){
+
+            let photo_elem = document.getElementById("photo")
+            let button_elem = document.getElementById("button1")
+            let title = document.getElementById("message")
+
+            index= getRandomInt(0,3)
+
+            if(title.innerText === "Girl"){
+
+                boy_photo = boy_array[index]
+                photo_elem.setAttribute("src", boy_photo)
+                title.innerText = "Boy"
+            }else{
+                girl_photo = girl_array[index]
+                photo_elem.setAttribute("src", girl_photo)
+                title.innerText="Girl"
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>

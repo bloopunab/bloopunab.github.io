@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Hello World</title>
+
+    <style>
+        h1 {
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+
+    <!-- JavaScript below-->
+    <!-- <script>
+
+        let color = prompt("What is your favorite color?")
+
+    </script> -->
+
+</head>
+<body>
+
+    <h1 id='greeting'>
+        <p>
+            Hello World
+        </p>
+    </h1>
+
+    
+
+    <button onclick='change_greeting()'>
+        Change Greeting
+    </button>
+
+    <br>
+    <button onclick='change_heading_background()'>
+        Change Heading Background Color
+    </button>
+
+
+
+    <hr>
+
+    <div id='lonely' style="background-color: aqua;">
+        I'm so lonely
+    </div>
+
+    <button onclick='add_friends()'>
+        Let's not be lonely
+    </button>
+
+
+
+    <hr>
+
+    <div>
+        <img id="date" src="photos/armie.jpg">
+    </div>
+
+    <button onclick='get_next_date()'>
+        Show me my next Tinder date
+    </button>
+
+
+
+    <script>
+        
+        function change_greeting() {
+            let cur_greet = document.getElementById('greeting').innerText
+            console.log("============== InnerText ==============")
+            console.log(cur_greet)
+            console.log(cur_greet.length)
+
+            let cur_greet_html = document.getElementById('greeting').innerHTML
+            console.log("============== InnerHTML ==============")
+            console.log(cur_greet_html)
+            console.log(cur_greet_html.length)
+
+            let new_greet = ''
+
+            if( cur_greet == 'Hello World' ) {
+                new_greet = 'Bye Bye World'
+            }
+            else {
+                new_greet = 'Hello World'
+            }
+
+            document.getElementById('greeting').innerText = new_greet
+        }
+
+        function change_heading_background() {
+            document.getElementById('greeting').style.backgroundColor = 'lightblue'
+        }
+
+        function add_friends() {
+            document.getElementById('lonely').innerHTML = 
+            `
+                <ul>
+                    <li>Monica</li>
+                    <li>Chandler</li>
+                    <li>Ross</li>
+                    <li>Rachel</li>
+                </ul>
+            `
+        }
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+        }
+
+        var guys = [ 'armie', 'ben', 'henry', 'paul', 'ryan', 'ryang', 'zac' ] // There are 7 guys
+
+        function get_next_date() {
+            let next_index = getRandomInt(0, 6)
+            let next_guy_name = guys[next_index]
+
+            // Change image src
+            document.getElementById('date').src = 'photos/' + next_guy_name + '.jpg'
+        }
+
+    </script>
+    
+</body>
+</html>

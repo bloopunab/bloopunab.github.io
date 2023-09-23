@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Basics - Exercise 2</title>
+</head>
+<body>
+
+
+    <script>
+
+        //=====================================================
+        // Task #1
+        //=====================================================
+        console.log("================= Task #1 =================")
+        let students = [
+            ['Ambrose', 2.7, true],
+            ['Darren', 3.8, false],
+            ['Stevie', 2.9, false],
+            ['Gerry', 3.9, true],
+            ['Jewel', 2.6, false],
+            ['Emily', 3.4, true],
+            ['Jia Le', 3.0, false]
+        ];
+
+        // If a student's 3rd value (Boolean) is true, then print 'handsome'
+        // Else, 'not handsome'
+        
+        // YOUR CODE GOES HERE
+
+
+
+        
+
+        //=====================================================
+        // Task #2
+        //=====================================================
+        console.log("================= Task #2 =================")
+        let wad2 = {
+            code: "IS216",
+            title: "Web Application Development II",
+            core: true,
+            professors: [
+                'Shar Lwin Khin',
+                'Mok Heng Ngee',
+                'Sun Jun',
+                'Kyong Shim'
+            ]
+        }
+        // YOUR CODE GOES HERE
+        
+
+
+
+
+        //=====================================================
+        // Task #3
+        //=====================================================
+        // You will be given two strings str1 and str2.
+        // Both str1 and str2 do NOT contain any whitespaces (e.g. ' ')
+        // Assume the strings are NOT case-sensitive. E.g. "a" is same as "A"
+        // Write a function that returns which characters in str1 are found in str2.
+        // The return array should not contain duplicates. Only lower-case characters are allowed in the array.
+        console.log("================= Task #3 =================")
+        function get_common_characters(str1, str2) {
+            
+            let common_chars = []
+
+            // YOUR CODE GOES HERE
+            
+            return common_chars
+        }
+
+        // Test Case 1 (DO NOT MODIFY THIS SECTION)
+        console.log(
+            get_common_characters( 'hello', 'hell' )
+        ) // Expected: an array containing 'h', 'e', 'l'
+
+        // Test Case 2 (DO NOT MODIFY THIS SECTION)
+        console.log(
+            get_common_characters( 'apple', 'congo' )
+        ) // Expected: an empty array
+
+        // Test Case 3 (DO NOT MODIFY THIS SECTION)
+        console.log(
+            get_common_characters( 'Poop', 'poopybutt' )
+        ) // Expected: an array containing 'p', 'o'
+
+        
+    </script>
+    
+</body>
+</html>
